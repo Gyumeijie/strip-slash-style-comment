@@ -1,0 +1,33 @@
+{
+  "name": "strip-slash-style-comment",
+  "version": "1.0.0",
+  "description": "strip slash-style comment",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --exit",
+    "lint": "eslint index.js",
+    "lint:fix": "eslint --fix index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gyumeijie/strip-slash-style-comment.git"
+  },
+  "keywords": [
+    "slash-style",
+    "comment",
+    "remove",
+    "strip",
+    "c-style",
+    "cpp-style",
+    "decomment"
+  ],
+  "author": "Gyumeijie",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Gyumeijie/strip-slash-style-comment/issues"
+  },
+  "homepage": "https://github.com/Gyumeijie/strip-slash-style-comment#readme",
+  "devDependencies": {
+    "mocha": "^5.2.0"
+  }
+}
