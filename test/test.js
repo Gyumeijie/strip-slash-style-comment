@@ -81,10 +81,10 @@ describe('Remove slash-style comment', () => {
 
 describe('Test file', () => {
    let weirdData = '', expectedData = ' ';
-   const fs = require('fs'); 
+   const fs = require('fs');
 
    beforeEach(() => {
-      weirdData = fs.readFileSync(`${__dirname}/weird.json`, 'utf8');    
+      weirdData = fs.readFileSync(`${__dirname}/weird.json`, 'utf8');
       expectedData = fs.readFileSync(`${__dirname}/expect.json`, 'utf8');
    });
 

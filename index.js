@@ -1,15 +1,15 @@
 'use strict';
 function isEscaped (str, qoutePos) {
    let i = qoutePos - 1;
-   let numOfEscape = 0;
+   let numOfBackslash = 0;
 
    while (str[i] === '\\') {
-      numOfEscape += 1;
+      numOfBackslash += 1;
       i -= 1;
    }
 
-   // If numOfEscape is even, then the quote is not escaped; Otherwise escaped.
-   return !!(numOfEscape % 2);
+   // If numOfBackslash is even, then the quote is not escaped; Otherwise escaped.
+   return !!(numOfBackslash % 2);
 }
 
 function processComments (str, start, end, strategy) {
